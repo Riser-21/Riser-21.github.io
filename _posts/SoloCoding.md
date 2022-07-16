@@ -3,6 +3,8 @@ layout: post
 title: "나도코딩 기초"
 ---
 
+변수--> 변할수 있는 값
+상수--> 변하지 않는 값
 
 #include <stdio.h>
 int main(void)
