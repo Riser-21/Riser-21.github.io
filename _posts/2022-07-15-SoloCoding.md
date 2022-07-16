@@ -9,7 +9,7 @@ title: "나도코딩 기초"
 
 상수--> 변하지 않는 값
 
-```
+ ```
 #include <stdio.h>
 
 int main(void)
@@ -36,4 +36,4 @@ int main(void)
     printf("태어난 년도 : %d\n" , YEAR);
     return 0;
   }
-    ```
+ ```
