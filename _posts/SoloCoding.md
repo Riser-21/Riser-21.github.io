@@ -4,9 +4,12 @@ title: "나도코딩 기초"
 ---
 
 변수--> 변할수 있는 값
+
 상수--> 변하지 않는 값
 
+```
 #include <stdio.h>
+
 int main(void)
 {
 	// 정수형 변수에 대한 예제
@@ -31,3 +34,4 @@ int main(void)
 	printf("태어난 년도 : %d\n" , YEAR);
 	return 0;
 }
+  ```
