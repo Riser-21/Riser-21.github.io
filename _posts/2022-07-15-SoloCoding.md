@@ -67,15 +67,15 @@ int main(void)
 	return 0;
   
   // 문자(한 글자), 문자열(여러 글자)
-	char c = 'A';
+	char c = 'A'; // 문자
 	printf("%c\n", c);
 
-	char str[256];
+	char str[256]; // 배열을 이용한 문자열
 	scanf_s("%s\n", str, sizeof(str));
 	printf("%s\n'", str);
 
 	return 0;
-  
+  ```
   
   
   
