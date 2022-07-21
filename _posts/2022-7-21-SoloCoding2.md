@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "나도코딩 기초 -> 피라미드 쌓기"
 ---
 
@@ -121,4 +121,76 @@ title: "나도코딩 기초 -> 피라미드 쌓기"
 	}
   ```
   
+  
+  ```
+  /*
+	*
+	**
+	***
+	****
+	*****
+	*/
+
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j <= i; j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+  ```
+  
+  
+  ```
+  /*
+S 는 공백 (앞에 S가 있다고 생각하기
+	    *			     SSSS*
+	   **			     SSS**
+	  ***  	 =>		 SS***
+	 ****			     S****	
+	*****			     *****
+*/
+
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = i; j < 5 - 1; j++)
+		{
+			printf("S"); // printf(" ");
+		}
+		for (int k = 0; k <= i; k++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+  ```
+  
+#__피라미드를 쌓아라 - 프로젝트__ 
+
+```
+/*  똑같이 앞에 S가 있다 생각하기
+         *                   SSSS*
+		    ***                  SSS***
+	     *****      ->         SS*****
+	    *******                S*******
+	   *********               *********
+*/
+
+	int floor;
+	printf("몇 층으로 쌓겠느냐?");
+	scanf_s("%d\n", &floor);
+	for (int i = 0; i < floor; i++)
+	{
+		for (int j = i; j < floor - 1; j++)
+		{
+			printf("S");  // printf(" ");
+		}
+		for (int k = 0; k <= i * 2 + 1; k++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+  ```
   
