@@ -180,7 +180,10 @@ S 는 공백 (앞에 S가 있다고 생각하기
           *******                S*******
          *********               *********
 */
+#include <stdio.h>
 
+int main(void)
+{
 	int floor;
 	printf("몇 층으로 쌓겠느냐?");
 	scanf_s("%d\n", &floor);
