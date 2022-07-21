@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "나도코딩 기초 -> 피라미드 쌓기"
 ---
 
