@@ -56,7 +56,7 @@ title: "나도코딩 기초3 -> 숫자 맞히기 Up & Down"
   
 	1번부터 30번까지 있는 반에서 1번에서 5번까지 조별 발표를 합니다.
  
- ```
+  ```
 	for (int i = 1; i <= 30; i++)
 	{
 		if (i >= 6)
@@ -119,3 +119,68 @@ title: "나도코딩 기초3 -> 숫자 맞히기 Up & Down"
 		printf("값이 서로 다르네요\n");
 	}
   ```
+
+ # 4-5. Switch Case 문 -> break 쓰기
+ 
+  ```
+  + #include <time.h>
+  
+  srand(time(NULL));  // srand : 랜덤으로 숫자뽑기
+	int i = rand() % 3; // 0 ~ 2 반환 (시작 값이 0부터임)
+	switch (i)
+	{
+	case 0:printf("가위\n"); break;
+	case 1:printf("바위\n"); break;
+	case 2:printf("보\n"); break;
+	default:printf("몰라요\n"); break;
+	}
+  ```
+  
+  # 4-6. Up and Down 프로젝트 
+  ```
+  	
+  #include <stdio.h>
+  #include <time.h>
+
+  int main(void)
+  {  
+	srand(time(NULL));
+	int num = rand() % 100 + 1; // 1 ~ 100 사이의 숫자
+	printf("숫자 : %d\n", num);
+	int answer = 0; // 정답
+	int chance = 5; // 기회 수
+	while (chance > 0)
+	{
+		printf("남은 기회 %d 번\n", chance--);
+		printf("숫자를 맞혀보세요 (1~100) : ");
+		scanf_s("%d", &answer);
+
+		if (answer > num)
+		{
+			printf("DOWN ↓ \n\n");
+		}
+		else if (answer < num)
+		{
+			printf("UP ↑ \n\n");
+		}
+		else if (answer == num)
+		{
+			printf("정답입니다 !\n\n");
+			break;
+		}
+		else
+		{
+			printf("알 수 없는 오류가 발생했어요\n"); // 보통은 나올일 없음
+		}
+
+		if (chance == 0)
+		{
+			printf("모든 기회를 다 쓰셨네요. 아쉽게 실패했습니다\n");
+			break;
+		}
+	}
+		return 0;
+}
+  ```
+  
+  
