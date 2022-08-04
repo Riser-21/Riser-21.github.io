@@ -125,7 +125,7 @@ title: "나도코딩 기초3 -> 숫자 맞히기 Up & Down"
   ```
   + #include <time.h>
   
-  srand(time(NULL));  // srand : 랜덤으로 숫자뽑기
+  srand(time(NULL));  // srand : 랜덤으로 숫자뽑기 , srand(time(NULL)); -> 난수 초기화하기
 	int i = rand() % 3; // 0 ~ 2 반환 (시작 값이 0부터임)
 	switch (i)
 	{
