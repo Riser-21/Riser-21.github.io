@@ -3,7 +3,7 @@ layout: single
 title: "나도코딩 기초2 -> 피라미드 쌓기"
 ---
 
-```
+ ```
  #include <stdio.h>
 
 
