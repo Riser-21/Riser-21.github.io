@@ -144,4 +144,94 @@ int function_with_return()
 }
 ```
 
+__전달값이 없는 함수__
+```
+#include <stdio.h>
 
+// 선언
+void p(int num);
+
+ void function_without_return();
+int function_with_return();
+void function_without_params();
+
+int main(void)
+{
+	// 함수 종류
+	// 반환값이 있는 함수
+/*	int ret = function_with_return();
+	p(ret);
+*/	
+	// 파라미터(전달값)가 없는 함수
+	function_without_params();
+	return 0;
+}
+
+// 정의
+void p(int num)
+{
+	printf("num 은 %d 입니다", num);
+}
+
+int function_with_return()
+{
+	printf("반환값이 있는 함수입니다\n");
+	return 10;
+}
+
+void function_without_params()
+{
+	printf("전달값이 없는 함수입니다.\n");
+}
+```
+
+
+__전달값이 있는 함수__
+
+```
+#include <stdio.h>
+
+// 선언
+void p(int num);
+
+void function_without_return();
+int function_with_return();
+void function_without_params();
+void function_with_params(int num1, int num2, int num3);
+
+int main(void)
+{
+	// 함수 종류
+	// 반환값이 있는 함수
+/*	int ret = function_with_return();
+	p(ret);
+*/	
+/*	// 파라미터(전달값)가 없는 함수
+	function_without_params();
+*/
+	// 전달값이 있는 함수
+	function_with_params(10,20,30);
+	return 0;
+}
+
+// 정의
+void p(int num)
+{
+	printf("num 은 %d 입니다", num);
+}
+
+int function_with_return()
+{
+	printf("반환값이 있는 함수입니다\n");
+	return 10;
+}
+
+void function_without_params()
+{
+	printf("전달값이 없는 함수입니다.\n");
+}
+void function_with_params(int num1, int num2, int num3)
+{
+	printf("전달값이 있는 함수이며, 전달받은 값은 %d, %d, %d 입니다\n", num1, num2, num3);
+}
+```
