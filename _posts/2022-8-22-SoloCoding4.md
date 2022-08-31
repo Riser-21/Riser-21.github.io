@@ -373,7 +373,7 @@ int main(void)
 
 	srand(time(NULL));
 	int count = 0; // 맞힌 문제 개수
-	for (int i = 1; i < 5; i++)
+	for (int i = 1; i <= 5; i++)
 	{
 		// x * y = ?
 		int num1 = getRandomNumber(i);
